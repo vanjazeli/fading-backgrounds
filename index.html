@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" src="app/main.js" defer></script>
+    <script src="app/vanilla-tilt.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="https://github.com/vanjazeli/fading-backgrounds" class="nav__link hover-default">docs</a>
+      <div class="nav__items">
+        <a href="https://www.linkedin.com/in/vanja-zeli/" class="hover-default"><img src="/public/linkedin.png" alt="linkedin" class="nav__icon"></a>
+        <a href="https://github.com/vanjazeli" class="hover-default"><img src="/public/github.png" alt="github" class="nav__icon"></a>
+      </div>
+    </nav>
+    <section class="section js-section" data-tilt data-tilt-max="20">
+      <div class="wrap">
+        <div class="section__content">
+          <h1 class="section__heading">
+            <img src="./public/brush.svg" alt="brush.svg" class="section__brush">
+            <span class="hollow">Fading</span> Backgrounds.
+          </h1>
+          <span class="section__text">Visit <a href="https://github.com/vanjazeli/fading-backgrounds" class="section__link hover-default">docs</a> to see how to add this effect to your project.</span>
+        </div>
+      </div>
+    </section>
+    <div class="bottom">
+      <button type="button" class="bottom__button hover-default js-demo-1">demo 1</button>
+      <button type="button" class="bottom__button hover-default js-demo-2">demo 2</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+class fadingBackgrounds {
+  constructor() {}
+}
