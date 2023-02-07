@@ -73,6 +73,7 @@ body {
   left: 0;
   background-color: $grey;
   transition: $secondary-transition;
+  overflow: hidden;
 }
 
 .section--mod {

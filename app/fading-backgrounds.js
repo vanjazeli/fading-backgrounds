@@ -32,6 +32,12 @@ class fadingBackgrounds {
         showingImage++;
       } else {
         showingImage = 0;
+        const randX = Math.floor(Math.random() * (this.main.element.clientWidth - 100));
+        const randY = Math.floor(Math.random() * (this.main.element.clientHeight - 100));
+        this.main.images[showingImage].style.top = `${randY}px`;
+        this.main.images[showingImage].style.left = `${randX}px`;
+        this.main.images[showingImage].style.opacity = "1";
+        showingImage = 1;
       }
     }, 1000);
     setTimeout(() => {
@@ -41,9 +47,11 @@ class fadingBackgrounds {
           hidingImage++;
         } else {
           hidingImage = 0;
+          this.main.images[hidingImage].style.opacity = "0";
+          hidingImage = 1;
         }
       }, 1000);
-    }, 4000);
+    }, 3000);
   }
 }
 
