@@ -17,6 +17,5 @@ const imageUrls = [
   "public/fading-backgrounds-9.jpg",
   "public/fading-backgrounds-10.jpg",
 ];
-const type = "still";
 
-new fadingBackgrounds(element, imageUrls, type);
+new fadingBackgrounds(element, imageUrls);

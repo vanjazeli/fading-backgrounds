@@ -19,6 +19,7 @@ body {
   color: $white;
   overflow: hidden;
   min-height: 100vh;
+  isolation: isolate;
 
   button {
     font-family: "Inter", sans-serif;
@@ -117,11 +118,6 @@ body {
   opacity: 0.12;
 }
 
-.hollow {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px $white;
-}
-
 .section__link {
   color: $blue;
 }
@@ -153,5 +149,13 @@ body {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
+  .wrap {
+    max-width: 300px;
+  }
+
+  .section__heading {
+    font-size: 42px;
+    line-height: 48px;
+  }
 }
