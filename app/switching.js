@@ -1,5 +1,5 @@
 const switching = {
-    section: document.querySelector(".js-section"),
+    section: document.querySelector(".js-section-one"),
     buttonOne: document.querySelector(".js-button-one"),
     buttonTwo: document.querySelector(".js-button-two"),
 

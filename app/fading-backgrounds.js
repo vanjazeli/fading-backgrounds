@@ -12,22 +12,33 @@ class fadingBackgrounds {
       this.main.images[i] = document.createElement("div");
       this.main.images[i].style.background = `url('${imageUrls[i]}') no-repeat center center / cover`;
       if (this.properties && this.properties.height) {
-        this.main.images[i].style.height = `${this.properties.height}px`;
+        this.main.images[i].style.height = `${this.properties.height}`;
       } else {
         this.main.images[i].style.height = `200px`;
       }
       if (this.properties && this.properties.width) {
-        this.main.images[i].style.width = `${this.properties.width}px`;
+        this.main.images[i].style.width = `${this.properties.width}`;
       } else {
         this.main.images[i].style.width = "200px";
       }
       this.main.images[i].style.position = "absolute";
       this.main.images[i].style.zIndex = "-1";
       this.main.images[i].style.opacity = "0";
-      if (this.properties && this.properties.transitionTime) {
-        this.main.images[i].style.transition = `opacity ${this.properties.transitionTime}ms ease-in-out`;
+      if (this.properties && this.properties.animation) {
+        if (!this.properties.animation.transitionTime && !this.properties.animation.moving) {
+          this.main.images[i].style.transition = `opacity 300ms ease-in-out`;
+        }
+        if (!this.properties.animation.transitionTime && this.properties.animation.moving) {
+          this.main.images[i].style.transition = "300ms ease-in-out";
+        }
+        if (this.properties.animation.transitionTime && !this.properties.animation.moving) {
+          this.main.images[i].style.transition = `opacity ${this.properties.animation.transitionTime}ms ease-in-out`;
+        }
+        if (this.properties.animation.transitionTime && this.properties.animation.moving) {
+          this.main.images[i].style.transition = `${this.properties.animation.transitionTime}ms ease-in-out`;
+        }
       } else {
-        this.main.images[i].style.transition = "opacity 300ms ease-in-out";
+        this.main.images[i].style.transition = `opacity 300ms ease-in-out`;
       }
       this.main.element.appendChild(this.main.images[i]);
     }
@@ -35,6 +46,14 @@ class fadingBackgrounds {
   imageFading() {
     let showingImage = 0;
     let hidingImage = 0;
+    if (this.properties && this.properties.animation && this.properties.animation.moving) {
+      this.main.images.forEach((image) => {
+        const randX = Math.floor(Math.random() * (this.main.element.clientWidth - 100));
+        const randY = Math.floor(Math.random() * (this.main.element.clientHeight - 100));
+        image.style.top = `${randY}px`;
+        image.style.left = `${randX}px`;
+      });
+    }
     setInterval(
       () => {
         if (showingImage < this.main.images.length) {

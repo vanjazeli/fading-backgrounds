@@ -4,7 +4,6 @@ import fadingBackgrounds from "./fading-backgrounds";
 
 switching.init();
 
-const element = document.querySelector(".section");
 const imageUrls = [
   "public/fading-backgrounds-1.jpg",
   "public/fading-backgrounds-2.jpg",
@@ -18,4 +17,32 @@ const imageUrls = [
   "public/fading-backgrounds-10.jpg",
 ];
 
-new fadingBackgrounds(element, imageUrls);
+const elementOne = document.querySelector(".js-section-one");
+const propertiesOne = {
+  height: "200px",
+  width: "300px",
+  animation: {
+    transitionTime: 300,
+    moving: false,
+  },
+  cycle: {
+    duration: 1000,
+    numberOfImages: 3,
+  },
+};
+new fadingBackgrounds(elementOne, imageUrls, propertiesOne);
+
+const elementTwo = document.querySelector(".js-section-two");
+const propertiesTwo = {
+  height: "200px",
+  width: "300px",
+  animation: {
+    transitionTime: 300,
+    moving: true,
+  },
+  cycle: {
+    duration: 1000,
+    numberOfImages: 3,
+  },
+};
+new fadingBackgrounds(elementTwo, imageUrls, propertiesTwo);
