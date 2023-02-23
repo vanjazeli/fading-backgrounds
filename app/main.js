@@ -5,16 +5,16 @@ import fadingBackgrounds from "./fading-backgrounds";
 switching.init();
 
 const imageUrls = [
-  "public/images/fading-backgrounds-1.jpg",
-  "public/images/fading-backgrounds-2.jpg",
-  "public/images/fading-backgrounds-3.jpg",
-  "public/images/fading-backgrounds-4.jpg",
-  "public/images/fading-backgrounds-5.jpg",
-  "public/images/fading-backgrounds-6.jpg",
-  "public/images/fading-backgrounds-7.jpg",
-  "public/images/fading-backgrounds-8.jpg",
-  "public/images/fading-backgrounds-9.jpg",
-  "public/images/fading-backgrounds-10.jpg",
+  "./public/images/fading-backgrounds-1.jpg",
+  "./public/images/fading-backgrounds-2.jpg",
+  "./public/images/fading-backgrounds-3.jpg",
+  "./public/images/fading-backgrounds-4.jpg",
+  "./public/images/fading-backgrounds-5.jpg",
+  "./public/images/fading-backgrounds-6.jpg",
+  "./public/images/fading-backgrounds-7.jpg",
+  "./public/images/fading-backgrounds-8.jpg",
+  "./public/images/fading-backgrounds-9.jpg",
+  "./public/images/fading-backgrounds-10.jpg",
 ];
 
 const elementOne = document.querySelector(".js-section-one");
