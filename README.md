@@ -16,6 +16,7 @@ Keep in mind that this is the most basic example. You can find the initializatio
 
 ```JavaScript
 import fadingBackgrounds from "./fading-backgrounds";
+
 const element = document.querySelector(".my-element");
 const imageUrls = [
   "./images/my-image-1.png",
@@ -37,6 +38,7 @@ const properties = {
     numberOfImages: 3
   }
 }
+
 new Ira(element, imageUrl, animationType);
 ```
 
