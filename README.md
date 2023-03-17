@@ -39,7 +39,7 @@ const properties = {
   }
 }
 
-new Ira(element, imageUrl, animationType);
+new fadingBackgrounds(element, imageUrl, animationType);
 ```
 
 ### Arguements
