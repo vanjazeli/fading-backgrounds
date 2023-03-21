@@ -49,7 +49,7 @@ The `fadingBackgrounds(element, imageUrl, animationType)` class takes in three a
 |:----------|:-----|:------------|
 | `element` | object | Defines the object from the dom to which we would like to add the desired effect. |
 | `imageUrl` | array | Defines a paths to all the images that we would like to display in the back of the desired element. |
-| `properties` | object | Defines the behaviour of the effect. |
+| `properties` | object | Defines the behaviour of the effect. This argument is optional. |
 
 ### Properties object
 This is the structure of the properties object with an explaination of each of the properties as well as their default values. Each of the properties is optional.
