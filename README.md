@@ -1,5 +1,5 @@
 # Fading Backgrounds
-A UI JavaScript library which allows you to add fading images with random positions in the back of an HTML element.
+A JavaScript library which allows you to add fading images with random positions in the back of an HTML element.
 
 ## Demo
 Check out the demo of this project right [here](https://vanjazeli.github.io/fading-backgrounds/). 
