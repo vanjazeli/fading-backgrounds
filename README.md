@@ -39,11 +39,11 @@ const properties = {
   }
 }
 
-new fadingBackgrounds(element, imageUrl, animationType);
+new fadingBackgrounds(element, imageUrl, properties);
 ```
 
 ### Arguements
-The `fadingBackgrounds(element, imageUrl, animationType)` class takes in three arguements: element, imageUrl and properties.
+The `fadingBackgrounds(element, imageUrl, properties)` class takes in three arguements: element, imageUrl and properties.
 
 | Arguement | Type | Description |
 |:----------|:-----|:------------|
